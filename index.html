@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Graph Visualizer</h1>
+    <div class="controls">
+        <input type="number" id="nodeA" placeholder="Node A">
+        <input type="number" id="nodeB" placeholder="Node B">
+        <input type="number" id="distance" placeholder="Distance">
+        <button onclick="addEdge()">Add Edge</button>
+        <button onclick="deleteNode()">Delete Node</button>
+        <button onclick="changeDistance()">Change Distance</button>
+        <br>
+        <input type="number" id="startNode" placeholder="Start Node">
+        <input type="number" id="endNode" placeholder="End Node">
+        <button onclick="dijkstra()">Dijkstra</button>
+        <button onclick="bellmanFord()">Bellman-Ford</button>
+        <button onclick="dfs()">DFS</button>
+        <button onclick="minimumSpanningTree()">Minimum Spanning Tree</button>
+    </div>
+    <div id="graphContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
